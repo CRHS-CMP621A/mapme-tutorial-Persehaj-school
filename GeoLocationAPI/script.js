@@ -13,8 +13,7 @@ navigator.geolocation.getCurrentPosition(
        const inputCadence = document.querySelector('.form__input--cadence');
        const inputElevation = document.querySelector('.form__input--elevation');
 
-       
-       //var map = L.map('map').setView([51.505, -0.09], 13);
+    
        const coords = [latitude, longitude]
        var map = L.map('map').setView(coords, 13)
        
@@ -42,9 +41,8 @@ navigator.geolocation.getCurrentPosition(
             .openPopup();
             form.classList.remove('hidden');
             inputDistance.focus();
-        })
-
-    },
+        }) },
+        
     function (){
         alert("Could not get the position.");
     }
